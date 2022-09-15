@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {FeedBack} from './page-styles.styled';
+import { FeedBack } from './page-styles.styled';
 import FeedbackOption from './FeedbackOption';
 import Notification from './Notification';
 import Section from './Section';
@@ -41,7 +41,7 @@ export class FeedbackPage extends Component {
 
         return (
             <FeedBack>
-                <Section title='Please leave feedback'                >
+                <Section title='Please leave feedback'>
                     <FeedbackOption
                         options={Object.keys(this.state)}
                         onLeaveFeedback={this.handleLeaveFeedback}
