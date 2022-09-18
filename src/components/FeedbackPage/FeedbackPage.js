@@ -7,16 +7,10 @@ import Section from './Section';
 import Statistic from './Statistic';
 
 export class FeedbackPage extends Component {
-    static defaultProps = {
-        goodInit: 0,
-        neutralInit: 0,
-        badInit: 0,
-    }
-
     state = {
-        good: this.props.goodInit,
-        neutral: this.props.neutralInit,
-        bad: this.props.badInit,
+        good: 0,
+        neutral: 0,
+        bad: 0,
     }
 
     countTotalFeedback = () => {
